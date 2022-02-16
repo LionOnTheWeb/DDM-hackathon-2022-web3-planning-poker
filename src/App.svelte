@@ -11,7 +11,8 @@
 </main>
 
 <style lang="scss">
-	$test-scss-var: blue;
+	$test-scss-var: palegreen;
+	
 	main {
 		text-align: center;
 		padding: 1em;
