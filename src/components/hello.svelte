@@ -10,7 +10,7 @@
 <style lang="scss">
 
 	h1 {
-		color: $primary-blue;
+		// color: $primary-blue;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;

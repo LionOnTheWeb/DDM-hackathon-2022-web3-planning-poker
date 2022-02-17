@@ -9,4 +9,4 @@ export let placeholder = null
   <label>{label}</label>
 {/if}
 
-<input type="{type}" placeholder="{placeholder}" />
+<input class="test" type="{type}" placeholder="{placeholder}" />
