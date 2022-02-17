@@ -2,6 +2,7 @@
 	// export let name;
 
 	import Hello from './components/hello.svelte'
+	import UserView from './components/userView.svelte'
 	import { Router, Link, Route } from "svelte-navigator";
 	import Home from "./routes/Home.svelte";
 	import Planning from "./routes/Plan.svelte";
@@ -11,23 +12,13 @@
 <Router>
 		<nav>
 			<Link to="/">Home</Link>
+			<Link to="/">User View</Link>
 		</nav>
-		<div>
-			<Route path="/">
-				<Home/>
-			</Route>
-			<Route path="planning" component={Planning}/>
-		</div>
 </Router>
 
-<!-- <main>
-	<Hello msg={'DDM Planning Poker Team!'}/>
-	<h1>and hello {name}</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<form>
-	<input type="text"/>
-	</form>
-</main> -->
+<main>
+	<UserView userName={'John'}/>
+</main>
 
 
 <style lang="scss">
