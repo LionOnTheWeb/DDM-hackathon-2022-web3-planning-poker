@@ -17,9 +17,7 @@
 			<Route path="/">
 				<Home/>
 			</Route>
-			<Route path="planning">
-				<Planning/>
-			</Route>
+			<Route path="planning" component={Planning}/>
 		</div>
 </Router>
 
