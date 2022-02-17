@@ -4,9 +4,9 @@
   <h1>Hello {msg}!</h1>
 
 <style lang="scss">
-  $test-scss-var: red;
+
 	h1 {
-		color: $test-scss-var;
+		color: $primary-blue;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
