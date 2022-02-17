@@ -8,11 +8,15 @@
 	<Hello msg={'DDM Planning Poker Team!'}/>
 	<h1>and hello {name}</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<form>
+	<input type="text"/>
+	</form>
 </main>
+
 
 <style lang="scss">
 	$test-scss-var: palegreen;
-	
+
 	main {
 		text-align: center;
 		padding: 1em;
@@ -31,5 +35,11 @@
 		main {
 			max-width: none;
 		}
+	}
+
+	form {
+		background-color: blue;
+		height: 400px;
+		width: 500px;
 	}
 </style>
