@@ -14,20 +14,20 @@
 
 <style lang="scss">
 	.nav {
-		font-size: 22px;
+		font-size: 16px;
 		display: flex;
     background: $nav-background-color;
 	}
 
 	:global(.nav .login) {
 		margin-left: auto;
-		padding-right: 20px;
+		padding-right: 8px;
 		color: $nav-font-color;
 	}
 
 	:global(.nav a) {
 		color: $nav-font-color;
-		padding: 20px;
+		padding: 12px 8px;
 	}
 
 	:global(.nav a:hover) {
