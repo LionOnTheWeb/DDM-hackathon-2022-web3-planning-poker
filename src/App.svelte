@@ -1,28 +1,38 @@
 <script>
-	// export let name;
-
-	import Hello from './components/hello.svelte'
 	import { Router, Link, Route } from "svelte-navigator";
+
+	import Layout from "./components/Layout.svelte";
+	import Nav from "./components/Nav.svelte";
 	import Home from "./routes/Home.svelte";
 	import Planning from "./routes/Plan.svelte";
+
+	let navItems = [
+		{
+			title: "Home",
+			location: "/",
+			component: Home
+		},
+		{
+			title: "Planning",
+			location: "/planning",
+			component: Planning
+		},
+		{
+			title: "Login",
+			location: "/login",
+			class: "login"
+		}
+	]
 </script>
 
 
 <Router>
-		<nav class="nav">
-			<Link to="/">Home</Link>
-			<Link to="/planning">Planning</Link>
-			<Link class="login" to="/login">Login</Link>
-		</nav>
-		<div>
-			<Route path="/">
-				<Home/>
-			</Route>
-			<Route path="planning" component={Planning}/>
-		</div>
+		<Nav navItems={navItems}/>
+		<Layout>
+			{#if navItems}
+				{#each navItems as navItem}
+					<Route path="{navItem.location}" component={navItem.component}/>
+				{/each}
+			{/if}
+		</Layout>
 </Router>
-
-
-<style lang="scss">
-
-</style>
