@@ -13,13 +13,10 @@
 </nav>
 
 <style lang="scss">
-	nav {
+	.nav {
 		font-size: 22px;
 		display: flex;
-	}
-
-	.nav {
-		background: $nav-background-color;
+    background: $nav-background-color;
 	}
 
 	:global(.nav .login) {
@@ -33,7 +30,7 @@
 		padding: 20px;
 	}
 
-	:global(.nav a:hover, nav a:focus) {
+	:global(.nav a:hover) {
 		color: $nav-font-color-hover;
 		text-decoration: none;
 	}
