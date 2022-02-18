@@ -4,6 +4,7 @@
 	import Layout from "./components/Layout.svelte";
 	import Nav from "./components/Nav.svelte";
 	import Home from "./routes/Home.svelte";
+	import UserView from "./routes/User.svelte";
 	import Planning from "./routes/Plan.svelte";
 
 	let navItems = [
@@ -21,6 +22,14 @@
 			title: "Login",
 			location: "/login",
 			class: "login"
+		},
+		{
+			title: "User",
+			location: "/user"
+		}, 
+		{
+			title: "Facilitator",
+			location: "/facilitator"
 		}
 	]
 </script>
