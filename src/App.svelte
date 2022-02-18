@@ -5,6 +5,7 @@
 	import Nav from "./components/Nav.svelte";
 	import Home from "./routes/Home.svelte";
 	import UserView from "./routes/User.svelte";
+	import FacilitatorView from "./routes/Facilitator.svelte";
 	import Planning from "./routes/Plan.svelte";
 
 	let navItems = [
@@ -25,11 +26,13 @@
 		},
 		{
 			title: "User",
-			location: "/user"
+			location: "/user",
+			component: UserView
 		}, 
 		{
 			title: "Facilitator",
-			location: "/facilitator"
+			location: "/facilitator",
+			component: FacilitatorView
 		}
 	]
 </script>
