@@ -19,15 +19,16 @@
 			location: "/planning",
 			component: Planning
 		},
-		{
-			title: "Login",
-			location: "/login",
-			class: "login"
-		},
+		// {
+		// 	title: "Login",
+		// 	location: "/login",
+		// 	class: "login"
+		// },
 		{
 			title: "User",
 			location: "/user",
-			component: UserView
+			component: UserView,
+			class: "login"
 		}, 
 		{
 			title: "Facilitator",

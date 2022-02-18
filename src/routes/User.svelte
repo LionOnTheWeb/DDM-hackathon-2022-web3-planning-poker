@@ -7,12 +7,12 @@
 </script>
 
   <div class="header">
-      <h2>Hello {userName}!</h2>
+      <h2>00:00</h2>
   </div>
   
   <p>{userName || "Player name"}</p>
   <p>Acive Ticket title</p>
-  
+
   <div class="card">
   {#each numbers as number}
       <Card userNumber={number}/>

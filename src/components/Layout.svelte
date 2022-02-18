@@ -1,4 +1,4 @@
-<h1 class="header">Fun Planing Poker</h1>
+<h1 class="header">Fun Planning Poker</h1>
 <div>
 <slot/>
 </div>

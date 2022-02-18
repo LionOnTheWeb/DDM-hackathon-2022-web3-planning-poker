@@ -1,18 +1,13 @@
 <script>
-import Layout from '../components/Layout.svelte'
 import Input from '../components/Input.svelte'
 let current = "Add Ticket";
-let msg = "";
 </script>
 
-<h1>Home Route</h1>
 <div class = "inputs">
-
-<Input bind:value={msg} placeholder="Enter your name..." />
-<p>Welcome {msg} </p>
-<Input placeholder="Enter room name..." />
-<Input placeholder="Fibonacci" />
-<Input placeholder="Ticket" />
+<Input label="Enter Name" placeholder="Enter your name..." />
+<Input label="Room Name" placeholder="Enter room name..." />
+<Input label="Planning Strategy" placeholder="Fibonacci Planning Poker Strategy" />
+<Input label="Ticket Title" placeholder="Ticket title (e.g. DDM-1234...)" />
 </div>
 
 <button
