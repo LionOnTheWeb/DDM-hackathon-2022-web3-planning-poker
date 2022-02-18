@@ -6,8 +6,20 @@
   <Input type="text" label="" value="Ticket N1: Defect | Image Cropping for HP Daily News Block is not correct"/>
   <Input type="text" label="" value="Ticket N2: Defect | Link Style on Sweepstakes page Tout is not matched to zeplin mockup"/>
   <Input type="text" label="" value="Ticket N3: Task | Update UDF for new Homepage"/>
-</div>  
-<style lang="scss">
+</div>
 
+<style lang="scss">
+.task-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+ 
+:global(.task-list input) {
+  padding: 10px;
+  width: auto;
+  margin: 8px 8%;
+}
 	
 </style>

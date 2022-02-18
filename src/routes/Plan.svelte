@@ -1,17 +1,13 @@
 <script>
-import Lists from '../components/Tasklist.svelte'
-import Input from '../components/Tasklist.svelte'
-import Layout from '../components/Layout.svelte'
+import TaskList from '../components/Tasklist.svelte'
 </script>
 
 <h2>Planning Organizer</h2>
 <div class="view">Facilitator View</div>
-<Layout>
-  <Input msg="world" />
-</Layout>
+<TaskList/>
 
-
-
-<style>
-
+<style lang="scss">
+  h2 {
+    @extend %route-title;
+  }
 </style>

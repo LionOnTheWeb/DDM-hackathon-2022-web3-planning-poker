@@ -11,3 +11,9 @@ export let placeholder = null
 {/if}
 
 <input type="{type}" placeholder="{placeholder}" value="{value}"/>
+
+<style>
+  input {
+    border-radius: 15px;
+  }
+</style>
