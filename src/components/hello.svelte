@@ -2,15 +2,16 @@
   export let msg;
 
   import Input from './Input.svelte'
+  import Image from './image.svelte'
   </script>
 
   <h1>Hello {msg}!</h1>
   <Input type="text" label="Facilitator"/>
-
-<style lang="scss">
+  <Image alt = "test"/>
+<style >
 
 	h1 {
-		color: $primary-blue;
+		color: green;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
