@@ -13,9 +13,10 @@
   <style lang="scss">
     .card{
         background: #fff;
-        padding: 20px;
+        padding: 20px 25px;
         border-radius: 5px;
         box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
-        width: 100px;
+        width: 200px;
+        height: 200px;
     }
   </style>
