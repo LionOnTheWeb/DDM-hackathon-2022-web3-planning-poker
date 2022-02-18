@@ -3,8 +3,12 @@
 <slot/>
 </div>
 
-<style>
+<style lang="scss">
   div {
     padding: 10% 20%;
+  }
+
+  h1 {
+    @extend %header;
   }
 </style>
