@@ -26,7 +26,6 @@
           padding: 25px 80px 50px 50px;
       }
       h2 {
-          color: $primary-blue;
           text-transform: uppercase;
           font-size: 4em;
           font-weight: 100;
@@ -45,5 +44,6 @@
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
+          margin: 25px 50px;
       }
   </style>

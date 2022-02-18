@@ -1,11 +1,26 @@
 
 <script>
     export let userNumber;
+
+	let val='';
+	let timer;
+
+	const debounce = v => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			val = v;
+		}, 350);
+	}
+
+
 </script>
 
 <div class="card">
     <div class="container">
-        <h1><b> {userNumber} </b></h1>
+        <input on:keyup={({ target: { value } }) => debounce(value)} />
+        <h1> {val}</h1>
+
+
     </div>
 </div>
 
@@ -16,7 +31,12 @@
         padding: 20px 25px;
         border-radius: 5px;
         box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 300px;
+        margin: 25px 10px;
+    }
+    h1 {
+        font-size: 70px;
+        text-align: center;
     }
   </style>
