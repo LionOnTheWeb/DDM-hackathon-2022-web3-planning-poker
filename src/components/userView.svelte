@@ -28,6 +28,8 @@
       .header {
           display: flex;
           justify-content: space-around;
+          height: 80px;
+          margin-top: -25px;
       }
 
       .card {
