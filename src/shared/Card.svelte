@@ -17,10 +17,7 @@
 
 <div class="card">
     <div class="container">
-        <input on:keyup={({ target: { value } }) => debounce(value)} />
-        <h1> {val}</h1>
-
-
+        {userNumber}
     </div>
 </div>
 
@@ -35,8 +32,12 @@
         height: 300px;
         margin: 25px 10px;
     }
-    h1 {
-        font-size: 70px;
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .container {
+        font-size: 60px;
         text-align: center;
+        line-height: 5;
     }
   </style>

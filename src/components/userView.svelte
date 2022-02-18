@@ -1,23 +1,21 @@
 <script>
     import Card from '../shared/Card.svelte';
     export let userName;
+
+    let numbers = [0,1,2,3,5,8,13,21];
     </script>
     <div className="app">
+
         <div class="header">
             <div class="header-img"></div>
             <h2>Hello {userName}!</h2>
         </div>
-        <p>Ticket 1</p>
-        <p>Ticket title</p>
+        <p>Player name</p>
+        <p>Acive Ticket title</p>
         <div class="card">
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
-            <Card userNumber="1"/>
+        {#each numbers as number}
+            <Card userNumber={number}/>
+        {/each}
         </div>
     </div> 
  
@@ -29,6 +27,9 @@
           text-transform: uppercase;
           font-size: 4em;
           font-weight: 100;
+      }
+      p {
+          font-size: 2em;
       }
       .header {
           display: flex;
