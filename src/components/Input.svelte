@@ -1,6 +1,7 @@
 <script>
 export let label = ""
 export let type = ""
+export let value = ""
 export let placeholder = null
 
 </script>
@@ -9,4 +10,4 @@ export let placeholder = null
   <label>{label}</label>
 {/if}
 
-<input class="test" type="{type}" placeholder="{placeholder}" />
+<input type="{type}" placeholder="{placeholder}" value="{value}"/>

@@ -5,7 +5,7 @@
   </script>
 
   <h1>Hello {msg}!</h1>
-  <Input type="text" label="Facilitator"/>
+  <Input type="text" label="Facilitator TEST"/>
 
 <style lang="scss">
 

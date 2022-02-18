@@ -9,9 +9,10 @@
 
 
 <Router>
-		<nav>
+		<nav class="nav">
 			<Link to="/">Home</Link>
 			<Link to="/planning">Planning</Link>
+			<Link class="login" to="/login">Login</Link>
 		</nav>
 		<div>
 			<Route path="/">
