@@ -4,10 +4,7 @@
 
     let numbers = [0,1,2,3,5,8,13,21];
     </script>
-    <div className="app">
-
         <div class="header">
-            <div class="header-img"></div>
             <h2>Hello {userName}!</h2>
         </div>
         <p>Player name</p>
@@ -17,12 +14,8 @@
             <Card userNumber={number}/>
         {/each}
         </div>
-    </div> 
  
   <style lang="scss">
-      .app {
-          padding: 25px 80px 50px 50px;
-      }
       h2 {
           text-transform: uppercase;
           font-size: 4em;
@@ -30,17 +23,13 @@
       }
       p {
           font-size: 2em;
+          padding-left: 65px;
       }
       .header {
           display: flex;
+          justify-content: space-around;
       }
-      .header-img {
-        width: 200px;
-        height: 200px;
-        background: url('https://image.shutterstock.com/image-photo/red-apple-isolated-on-white-260nw-1727544364.jpg');
-        background-size: cover;
-        margin-right: 200px;
-      }
+
       .card {
           display: flex;
           justify-content: space-between;
